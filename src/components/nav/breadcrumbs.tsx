@@ -22,7 +22,7 @@ export function Breadcrumbs() {
 
 	return (
 		<div className='flex w-full items-center justify-between'>
-			<div className='text-sm flex-1 overflow-hidden'>
+			<div className='text-sm flex-1'>
 				{/* Breadcrumb Base */}
 				<ul className='flex space-x-2'>
 					<li>
@@ -81,7 +81,8 @@ export function Breadcrumbs() {
 			</div>
 
 			{/* Botão de usuário */}
-			<div className='ml-auto relative min-w-[50px]'>
+			<div className='ml-auto relative min-w-[50px] pt-0.5 pb-0.5 items-center justify-center'>
+				{/* Aqui pode colocar o seu MyUserButton */}
 				<MyUserButton />
 			</div>
 		</div>

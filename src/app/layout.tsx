@@ -63,7 +63,7 @@ export default async function RootLayout({
 			}
 		>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen p-2.5 space-x-2.5`}
+				className={`${geistSans.variable} ${geistMono.variable}`} // antialiased flex flex-col min-h-screen p-2.5 space-x-2.5
 			>
 				<StackProvider
 					app={stackServerApp}
@@ -81,7 +81,7 @@ export default async function RootLayout({
 							<SidebarProvider>
 								<AppSidebar />
 								<SidebarInset>
-									<header className='flex h-10 shrink-0 items-center gap-2 border-b px-4 justify-between'>
+									<header className='flex h-12 shrink-0 items-center gap-2 border-b px-4 justify-between'>
 										<SidebarTrigger />
 										<Separator
 											orientation='vertical'

@@ -124,11 +124,7 @@ const PessoasPage = () => {
 	)
 
 	return (
-		<div className='container mx-auto py-10'>
-			<h1 className='text-2xl font-bold mb-6'>
-				Lista de Pessoas
-			</h1>
-
+		<div>
 			<DataTable
 				columns={columns}
 				data={pessoas}
