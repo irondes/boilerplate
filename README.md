@@ -40,4 +40,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
     npx @stackframe/init-stack@latest
 
 ```
-npx @stackframe/init-stack@latest
+

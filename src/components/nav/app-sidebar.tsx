@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import {
 	AudioWaveform,
@@ -18,9 +18,10 @@ import {
 	PieChart,
 	Settings2,
 	SquareTerminal,
-} from "lucide-react";
+	UserCircle2,
+} from 'lucide-react'
 
-import { NavMain } from "@/components/nav/nav-main";
+import { NavMain } from '@/components/nav/nav-main'
 // import { logout } from "@/actions/auth";
 
 // import { NavProjects } from '@/components/nav-projects'
@@ -37,25 +38,30 @@ import {
 	SidebarMenuButton,
 	SidebarMenuItem,
 	SidebarRail,
-} from "@/components/ui/sidebar";
-import { FaPeopleGroup } from "react-icons/fa6";
+} from '@/components/ui/sidebar'
 
 // This is sample data.
 const data = {
 	navMain: [
 		{
-			title: "Dashboard",
-			url: "/",
+			title: 'Dashboard',
+			url: '/',
 			icon: Home,
 		},
 		{
-			title: "ItemMenu",
-			url: "#",
+			title: 'Cadastros',
+			url: '/cadastros/pessoas',
+			icon: UserCircle2,
+		},
+		{
+			title: 'ItemMenu',
+			url: '#',
 			icon: FormInputIcon,
 			items: [
 				{
-					title: "SubMenuItem",
-					url: "/sub-menu-item",
+					title:
+						'SubMenuItem',
+					url: '/sub-menu-item',
 				},
 			],
 		},
@@ -80,25 +86,35 @@ const data = {
 		// 	],
 		// },
 		{
-			title: "Settings",
-			url: "#",
+			title: 'Settings',
+			url: '#',
 			icon: Settings2,
 			items: [
 				{
-					title: "Notificações",
-					url: "/settings/notification",
+					title:
+						'Notificações',
+					url: '/settings/notification',
 					// icon: PiPlugsConnectedFill,
 				},
 			],
 		},
 	],
-};
+}
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function AppSidebar({
+	...props
+}: React.ComponentProps<
+	typeof Sidebar
+>) {
 	return (
-		<Sidebar collapsible="icon" {...props}>
+		<Sidebar
+			collapsible='icon'
+			{...props}
+		>
 			<SidebarContent>
-				<NavMain items={data.navMain} />
+				<NavMain
+					items={data.navMain}
+				/>
 				{/* <NavProjects projects={data.projects} /> */}
 				{/* <SidebarGroup className="mb-20">
 					<SidebarGroupContent>
@@ -117,8 +133,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 					</SidebarGroupContent>
 				</SidebarGroup> */}
 			</SidebarContent>
-			<SidebarFooter>{/* <NavUser user={data.user} /> */}</SidebarFooter>
+			<SidebarFooter>
+				{/* <NavUser user={data.user} /> */}
+			</SidebarFooter>
 			<SidebarRail />
 		</Sidebar>
-	);
+	)
 }
